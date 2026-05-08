@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lohjan sillä siisti Tmi | Premium Cleaning Services in Lohja & Western Uusimaa</title>
+  <link rel="icon" href="Icon.png" type="image/png">
+  <meta name="description" content="Professional home and office cleaning services in Lohja and Western Uusimaa. Reliable, insured and high-quality cleaning by Lohjan sillä siisti Tmi.">
+  <meta name="keywords" content="cleaning services Lohja, kotisiivous Lohja, office cleaning Uusimaa, siivouspalvelu Lohja, cleaning company Finland">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Lohjan sillä siisti</div>
+  <div class="nav-right">
+    <div class="lang-menu-container">
+      <button class="lang-toggle" id="lang-toggle" aria-label="Select Language">
+        <span class="lang-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
+        <span id="current-lang-label">EN</span>
+      </button>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button onclick="setLanguage('en')" class="lang-option" id="btn-en">English</button>
+        <button onclick="setLanguage('fi')" class="lang-option" id="btn-fi">Suomi</button>
+        <button onclick="setLanguage('sv')" class="lang-option" id="btn-sv">Svenska</button>
+      </div>
+    </div>
+    <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Open Menu"><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services" data-key="nav-services">Services</a></li>
+      <li><a href="#pricing" data-key="nav-pricing">Pricing</a></li>
+      <li><a href="#reviews" data-key="nav-reviews">Reviews</a></li>
+      <li><a href="#about" data-key="nav-about">About</a></li>
+      <li><a href="#contact" class="nav-cta" data-key="nav-book">Book Now</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-subtitle" data-key="hero-subtitle">Premium Cleaning Services in Lohja & Western Uusimaa</p>
+    <h1 data-key="hero-title">Spotless Spaces,<br><span>by Lohjan sillä siisti.</span></h1>
+    <p data-key="hero-desc">Reliable home and commercial cleaning with a personal touch. Professional, detail-oriented, and dedicated to making your environment shine every single visit.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary" data-key="hero-btn-quote">Get a Free Quote</a>
+      <a href="#services" class="btn-secondary" data-key="hero-btn-serv">View Services</a>
+    </div>
+    <div class="hero-trust">
+      <span data-key="hero-trust-1">✓ Fully Insured</span>
+      <span data-key="hero-trust-2">✓ Local in Lohja</span>
+      <span data-key="hero-trust-3">✓ Kotitalousvähennys Eligible</span>
+    </div>
+  </div>
+</header>
+
+<section id="services" class="services">
+  <div class="section-header">
+    <p class="section-tag" data-key="serv-tag">Professional Cleaning Solutions</p>
+    <h2 data-key="serv-title">Services Tailored To Your Needs</h2>
+    <p data-key="serv-subtitle">High-quality residential and commercial cleaning with consistent results and personal service.</p>
+  </div>
+  <div class="service-grid">
+    <div class="service-card reveal"><div class="icon">🏠</div><h3 data-key="serv-res-title">Residential Cleaning</h3><div class="service-details" data-key="serv-res-desc"></div></div>
+    <div class="service-card reveal"><div class="icon">🏢</div><h3 data-key="serv-com-title">Commercial Cleaning</h3><div class="service-details" data-key="serv-com-desc"></div></div>
+    <div class="service-card reveal"><div class="icon">✨</div><h3 data-key="serv-deep-title">Deep Cleaning</h3><div class="service-details" data-key="serv-deep-desc"></div></div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing-section">
+  <div class="section-header">
+    <p class="section-tag" data-key="price-tag">Transparent Pricing</p>
+    <h2 data-key="price-title">Fair & Clear Pricing</h2>
+  </div>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <h3 data-key="price-res-label">Residential Cleaning</h3>
+      <div class="price-amount">€45<span>/hr</span></div>
+      <div class="price-example" data-key="price-res-example">Example: 60m² apartment from €90</div>
+      <ul class="price-list">
+        <li data-key="price-res-1">Minimum 2 hours per visit</li>
+        <li data-key="price-res-2">Eco-friendly supplies included</li>
+        <li data-key="price-res-3">Flexible recurring bookings</li>
+      </ul>
+    </div>
+    <div class="price-card featured reveal">
+      <h3 data-key="price-com-label">Commercial Cleaning</h3>
+      <div class="price-amount" data-key="price-quote">Custom Quote</div>
+      <div class="price-example" data-key="price-com-example">Tailored plans for offices & businesses</div>
+      <ul class="price-list">
+        <li data-key="price-com-1">Flexible after-hours visits</li>
+        <li data-key="price-com-2">Recurring contract discounts</li>
+        <li data-key="price-com-3">Customized cleaning schedules</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews-section reveal">
+  <div class="carousel-container">
+    <p class="section-tag" data-key="rev-tag">Trusted By Local Clients</p>
+    <h2 data-key="rev-title">Client Experiences</h2>
+    <div class="testimonial active"><p class="quote" data-key="rev-q1">"Taina's attention to detail is unmatched. My home has never felt this fresh."</p><span class="client-name">Maria S., Lohja</span></div>
+    <div class="testimonial"><p class="quote" data-key="rev-q2">"Professional, punctual and very thorough. I highly recommend the service."</p><span class="client-name">Thomas L., Espoo</span></div>
+    <div class="testimonial"><p class="quote" data-key="rev-q3">"Very reliable and easy communication. Everything always looks spotless afterwards."</p><span class="client-name">Hanna K., Siuntio</span></div>
+    <div class="testimonial"><p class="quote" data-key="rev-q4">"We hired Lohjan sillä siisti for office cleaning and have been extremely satisfied."</p><span class="client-name">Mikael R., Kirkkonummi</span></div>
+    <div class="carousel-controls"><button id="prevRev" class="rev-btn">←</button><button id="nextRev" class="rev-btn">→</button></div>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="about-container reveal">
+    <div class="about-text">
+      <p class="section-tag" data-key="about-tag">About The Company</p>
+      <h2 data-key="about-title">Cleaning With Care & Consistency</h2>
+      <div class="about-description" data-key="about-desc"></div>
+      <div class="trust-icons">
+        <span data-key="trust-1">🛡️ Fully Insured</span>
+        <span data-key="trust-2">⭐ Trusted Local Service</span>
+        <span data-key="trust-3">🔑 Trusted Keyholder</span>
+      </div>
+    </div>
+    <div class="about-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop" alt="Professional cleaning service"></div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section reveal">
+  <div class="section-header">
+    <p class="section-tag" data-key="faq-tag">Frequently Asked Questions</p>
+    <h2 data-key="faq-title">Common Questions</h2>
+  </div>
+  <div class="faq-accordion">
+    <div class="faq-item"><button class="faq-question"><span data-key="faq-q1"></span><div class="faq-icon">+</div></button><div class="faq-answer"><p data-key="faq-a1"></p></div></div>
+    <div class="faq-item"><button class="faq-question"><span data-key="faq-q2"></span><div class="faq-icon">+</div></button><div class="faq-answer"><p data-key="faq-a2"></p></div></div>
+    <div class="faq-item"><button class="faq-question"><span data-key="faq-q3"></span><div class="faq-icon">+</div></button><div class="faq-answer"><p data-key="faq-a3"></p></div></div>
+    <div class="faq-item"><button class="faq-question"><span data-key="faq-q4"></span><div class="faq-icon">+</div></button><div class="faq-answer"><p data-key="faq-a4"></p></div></div>
+    <div class="faq-item"><button class="faq-question"><span data-key="faq-q5"></span><div class="faq-icon">+</div></button><div class="faq-answer"><p data-key="faq-a5"></p></div></div>
+    <div class="faq-item"><button class="faq-question"><span data-key="faq-q6"></span><div class="faq-icon">+</div></button><div class="faq-answer"><p data-key="faq-a6"></p></div></div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container reveal">
+    <p class="section-tag" data-key="cont-tag">Contact Us</p>
+    <h2 data-key="cont-title">Ready To Book?</h2>
+    <p class="contact-subtitle" data-key="cont-subtitle">Request a free quote and we'll get back to you as soon as possible.</p>
+    <form id="contact-form" action="https://formspree.io/f/mlgzjlga" method="POST" class="contact-form">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+      </div>
+      <input type="text" name="location" placeholder="Address or Area" required>
+      <select name="service_type" required>
+        <option value="" disabled selected>Select Service Type</option>
+        <option value="residential">Residential Cleaning</option>
+        <option value="commercial">Commercial Cleaning</option>
+        <option value="deep">Deep Cleaning</option>
+      </select>
+      <textarea name="message" placeholder="Details..." rows="6" required></textarea>
+      <button type="submit" id="submit-btn" class="btn-submit"><span class="btn-text" data-key="cont-btn">Send Message</span><div class="loader"></div><div class="check">✓</div></button>
+      <button type="button" id="send-new-btn" class="btn-primary" style="display:none; margin-top:20px;"><span data-key="cont-send-new">Send Another Message</span></button>
+      <div id="form-status" class="form-status-msg" style="display:none;"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand"><h3>Lohjan sillä siisti Tmi</h3><p data-key="footer-tagline">Premium cleaning services in Lohja and Western Uusimaa.</p></div>
+    <div class="footer-contact">
+      <p>📍 Lohja / Western Uusimaa</p>
+      <p>📞 +358 XX XXX XXXX</p>
+      <p>✉️ info@lohjansillasiisti.fi</p>
+      <p>Y-tunnus: XXXXXXX-X</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2026 Lohjan sillä siisti Tmi. <span data-key="footer-rights">All rights reserved.</span></p></div>
+</footer>
+
+<a href="tel:+358000000000" class="floating-call" aria-label="Call us">📞</a>
+<div class="bg-glows"></div>
+<script src="script.js"></script>
+</body>
+</html>
